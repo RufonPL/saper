@@ -1,0 +1,101 @@
+.user-sidebar {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  width: 20%;
+  background-color: lightgreen;
+  float:left;
+}
+
+.board {
+  width: 70%;
+  display: inline-block;
+  padding:10px;
+  margin:10px;
+
+}
+.row-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.row-cell:first-of-type .cube{
+  border-top: 1px solid #000;
+}
+
+.cube:first-of-type {
+  border-left: 1px solid #000;
+}
+
+.checked {
+  background-color: #eee;
+}
+
+.bombed {
+  background-color: red;
+}
+
+#success, #lost {
+  text-align: center;
+  display: none;
+  margin-bottom: 20px;
+}
+
+#success {
+  color: green;
+}
+
+#lost {
+  color: red;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-lost {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
